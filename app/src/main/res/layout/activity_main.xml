@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.projects.abnd.abndproject1.MainActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Schrelson's"
+        android:textColor="@android:color/black"
+        android:textSize="56sp"
+        android:fontFamily="serif"
+        android:background="#03A9F4"
+        android:gravity="center" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:src="@drawable/banner"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Fast Ice Cream Delivery*"
+        android:textColor="@android:color/black"
+        android:textSize="34sp"
+        android:fontFamily="serif"
+        android:background="#03A9F4"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Call (419)ICE-SCRM"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:fontFamily="serif"
+        android:background="#0277BD"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#01579B" >
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_location_on_black_24dp" />
+        <TextView
+            android:id="@+id/street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/location"
+            android:text="3875 Neapolitan Way"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:fontFamily="serif" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/location"
+            android:layout_below="@id/street"
+            android:text="Cone, TX. 79357"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:fontFamily="serif" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="* Serving your sweet tooth 24 hours a day!"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:background="@android:color/black" />
+</LinearLayout>
